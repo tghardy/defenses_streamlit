@@ -34,7 +34,7 @@ df = df[models + nonmodels]
 
 ## Scoring code
 
-features = df[defenses]
+features = df[models]
 p = features.mean(axis=1)
 
 df['proportion_right'] = features.eq(df['gold_label'], axis=0).mean(axis=1)

@@ -9,7 +9,7 @@ nonmodels = ['proposition', 'policy_trial', 'gold_label', 'proportion_right', 'P
 defenses = [d for d in df.columns if d not in nonmodels]
 
 with st.sidebar:
-    color_by = st.selectbox("Color plot by...", options=df.columns.drop("proposition"), index=1)
+    color_by = st.selectbox("Color plot by...", options=df.columns.drop("proposition"), index=14)
 
     props = st.selectbox("Include propositions that are...", options=["True", "False", "Both"], index=2)
     policies = st.selectbox("Include propositions with...", options=["Policies", "No policies", "Both"], index=2)
